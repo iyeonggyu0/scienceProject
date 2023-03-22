@@ -12,7 +12,7 @@
 4.  [개발]()
 5.  [배포]()
 
-- 커밋 내역 [[바로가기]](#커밋-내역)
+- 커밋 내역 [[바로가기]](./commit.md)
 - server관련 [[바로가기]]()
 
   <br><br>
@@ -76,19 +76,24 @@
 
 ## 레이아웃 디자인
 
+
 #### AI ( Microsoft Design )
 
 ###### img1
+![검은색 계열의 단일 가로 사이트 페이지](https://user-images.githubusercontent.com/105581475/226787376-c1084abd-b46e-459d-9287-002e3b9ee6d6.png)
 
 ###### img2
+![검은색 계열의 단일 가로 사이트 페이지 (1)](https://user-images.githubusercontent.com/105581475/226787402-72239e81-1ec9-4b7c-a4ff-9fe3a1ce1d5a.png)
 
 <br>
 
 #### AI ( Developer Design )
 
 ###### img1
+![화면 캡처 2023-03-22 112043 - 복사본](https://user-images.githubusercontent.com/105581475/226787460-226896b5-f904-49dc-9236-9e96831d2325.png)
 
 ###### img2
+![화면 캡처 2023-03-22 112043](https://user-images.githubusercontent.com/105581475/226787471-ec18e897-099f-4c28-b3a1-0dbcd300f679.png)
 
 <br><br>
 
