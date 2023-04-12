@@ -1,17 +1,6 @@
 const palette = {
-  gameBg: '#111111',
-  gameStroke: '#222222',
-  gameLightStroke: '#5F5F5F',
-  gameFont: '#FFFFFF',
-  gameLightFont: '#CDCDCD',
-  gameSubFont: '#000000',
-
-  basicBg: '#F0EDE9',
-  basicStroke: '#796763',
-  basicLightStroke: '#98918F',
-  basicFont: '#796763',
-  basicSubFont: '#AD8388',
-
+  BG: '#A1E2FE',
+  DarkBG: '#11A3E0',
   black: '#000000',
   white: '#FFFFFF',
 };

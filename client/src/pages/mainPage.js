@@ -1,4 +1,6 @@
+import MainPageCP from '../components/mainCP/main';
+
 const MainPage = () => {
-  return;
+  return <MainPageCP />;
 };
 export default MainPage;

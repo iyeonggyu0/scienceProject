@@ -18,3 +18,18 @@
 
 - client, server의 폴더 구성
 - 필요한 대부분의 npm설치와 기본 셋팅
+
+<br>
+
+#### npm setUp
+
+###### 2023. APR. 11.
+
+<br>
+
+#### mainPage
+
+###### 2023. APR. 12.
+
+- Pc접속시 페이지 제작
+- 모바일 접속 mainPage 제작

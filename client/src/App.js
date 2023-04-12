@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import GlobalStyle from './style/globalStyle';
 
 // library
@@ -12,30 +12,28 @@ import PcConnectError from './components/_common/error/PcConnect';
 import ScrollToTop from './components/_common/scrollToTop';
 import MainPage from './pages/mainPage';
 import NotFountPage from './components/_common/error/404';
-import { useNavigate } from 'react-router-dom';
 
 function App() {
   const media = useMedia();
-  console.log(media);
-
-  useEffect(() => {
-    if (media.isPc) {
-      window.location.replace('/pcConnect');
-    }
-  }, [media]);
 
   return (
     <BrowserRouter>
       <ScrollToTop />
       <GlobalStyle />
-      <Routes>
-        {/* 메인 페이지 */}
-        <Route path="/" element={<MainPage />} />
+      {media.isPc && (
+        <Routes>
+          <Route path={'*'} element={<PcConnectError />} />
+        </Routes>
+      )}
+      {media.isMobile && (
+        <Routes>
+          {/* 메인 페이지 */}
+          <Route path="/" element={<MainPage />} />
 
-        {/* 404 */}
-        <Route path={'/pcConnect'} element={<PcConnectError />} />
-        <Route path={'/*'} element={<NotFountPage />} />
-      </Routes>
+          {/* 404 */}
+          <Route path={'/*'} element={<NotFountPage />} />
+        </Routes>
+      )}
     </BrowserRouter>
   );
 }
