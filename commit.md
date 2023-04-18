@@ -31,5 +31,13 @@
 
 ###### 2023. APR. 12.
 
-- Pc접속시 페이지 제작
+- Pc접속 방지 페이지 제작
 - 모바일 접속 mainPage 제작
+- <br>
+
+#### mnuePage
+
+###### 2023. APR. 18.
+
+- MnuePage페이지 제작
+- try ChatGPt 페이지 뼈대 제작
