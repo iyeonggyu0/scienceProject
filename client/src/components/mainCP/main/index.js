@@ -28,7 +28,7 @@ const MainPageCP = () => {
       <p>AiTestHub</p>
       <p>인공지능 관련 설문조사 사이트</p>
       {/* 버튼 */}
-      <div className="flexCenter" onCsslick={() => navigate('/menu')}>
+      <div className="flexCenter" onClick={() => navigate('/menu')}>
         <span>시작하기</span>
       </div>
 

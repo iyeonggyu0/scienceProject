@@ -41,3 +41,11 @@
 
 - MnuePage페이지 제작
 - try ChatGPt 페이지 뼈대 제작
+
+- <br>
+
+#### tryChatGptPage1
+
+###### 2023. APR. 19.
+
+- tryChatGptPage - css 적용

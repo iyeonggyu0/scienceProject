@@ -11,16 +11,16 @@ export const MainDiv = styled.section`
   & > div {
     flex-wrap: wrap;
     gap: 30px 0;
-    width: 50vw;
-    height: 115px;
+    width: 55vw;
+    height: 135px;
     position: relative;
   }
 
   & > div > p {
-    width: 50vw;
+    width: 55vw;
     position: absolute;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
     border: 1px solid black;
     cursor: pointer;
