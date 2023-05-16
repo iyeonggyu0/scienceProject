@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import GlobalStyle from './style/globalStyle';
 
 // library
@@ -18,6 +18,18 @@ import SurveyPage from './pages/surveyPage';
 
 function App() {
   const media = useMedia();
+
+  useEffect(() => {
+    const lastResetTime = localStorage.getItem('lastResetTime');
+    const now = Date.now();
+
+    // 페이지가 로드될 때마다 마지막 초기화 시간을 확인하고 5시간이 지났는지 확인
+    if (!lastResetTime || now - lastResetTime > 5 * 60 * 60 * 1000) {
+      // 'GPT Number of uses'를 5로 설정하고 현재 시간을 마지막 초기화 시간으로 저장
+      localStorage.setItem('GPT Number of uses', 5);
+      localStorage.setItem('lastResetTime', now);
+    }
+  }, []);
 
   return (
     <BrowserRouter>
