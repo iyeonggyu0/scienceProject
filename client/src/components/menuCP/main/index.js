@@ -7,7 +7,7 @@ const MnuePageMainCP = () => {
     <MainDiv className="flexCenter">
       <div className="flexCenter">
         <p onClick={() => navigate('/try-ChatGPT')}>Try ChatGPT</p>
-        <p onClick={() => navigate('/survey')}>survey</p>
+        <p onClick={() => navigate('/survey/profile')}>survey</p>
       </div>
     </MainDiv>
   );

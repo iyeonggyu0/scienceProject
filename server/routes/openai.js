@@ -1,16 +1,19 @@
-const OpenAI = require("openai");
-const { Configuration, OpenAIApi } = OpenAI;
 const express = require("express");
 const router = express.Router();
+const dotenv = require("dotenv");
+dotenv.config();
 
+const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
-  organization: "org-61MEulc6s1BeLM2RoTdq7Wyg",
-  apiKey: process.env.REACT_APP_OPENAI_API_KEY,
+  apiKey: process.env.OPENAI_API_KEY,
 });
-const openai = new OpenAIApi(configuration);
 
-router.post("/", async (res, req) => {
+router.post("/", async (req, res) => {
   const { message } = req.body;
+  const configuration = new Configuration({
+    apiKey: process.env.OPENAI_API_KEY,
+  });
+  const openai = new OpenAIApi(configuration);
   const response = await openai.createCompletion({
     model: "text-davinci-003",
     prompt: `${message}`,

@@ -46,7 +46,7 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/try-ChatGPT" element={<TryChatGPTPage />} />
-          <Route path="/survey" element={<SurveyPage />} />
+          <Route path="/survey/:num" element={<SurveyPage />} />
           {/* 404 */}
           <Route path={'/*'} element={<NotFountPage />} />
         </Routes>

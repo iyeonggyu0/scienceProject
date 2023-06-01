@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
+const bodyParser = require("body-parser");
 // const mySqlStore = require("express-mysql-session")(session);
 // const PORT = process.env.PORT || 3000;
 const PORT = 5000;
@@ -28,6 +29,9 @@ app.use(
     credentials: true,
   })
 );
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // 모듈 작성하기
 app.use("/api/user", userRouter);

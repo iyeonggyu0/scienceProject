@@ -17,7 +17,7 @@ export const MainStyle = styled.div`
   & > div:nth-child(1) > p:nth-child(1) {
     font-family: Noto Sans Kr;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding-bottom: 12px;
   }
 
@@ -81,12 +81,23 @@ export const MainStyle = styled.div`
   & > div:nth-child(2) > div:nth-child(2) {
     width: 100%;
     height: 53vh;
-    overflow: scroll;
+    overflow-y: auto;
     border-bottom: 1px solid ${({ theme }) => theme.palette.CmdStroke};
+    padding: 3vh 5%;
+  }
+
+  & > div:nth-child(2) > div:nth-child(2)::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  /* 끌 때 스크롤 막대 트랙 사용자 지정 */
+  & > div:nth-child(2) > div:nth-child(2)::-webkit-syslogbar-syslog:active {
+    background-color: #333;
   }
 
   & > div:nth-child(2) > div:nth-child(3) {
     height: 10vh;
+    gap: 0 10px;
   }
 
   & > div:nth-child(2) > div:nth-child(3) > p {
