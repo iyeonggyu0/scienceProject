@@ -137,11 +137,8 @@
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=Netlify&logoColor=white)
 ![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=Heroku&logoColor=white)
 
-테스트 기간: 0000년 00월 00일 ~ 0000년 00월 00일
 
-테스트 인원: 사이트 이용 대상자( 재학중인학교 혹은 인근 학교 학생 )
-
-배포 기간: 0000년 00월 00일 ~ 0000년 00월 00일
+배포 기간: 2023년 06월 09일 ~ 2023년 06월 10일
 
 <br>
 <br>
